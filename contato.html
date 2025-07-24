@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - NICO VRUM VRUM</title>
+  <link rel="stylesheet" href="style1.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"><!--TODOS OS ICONIS ESTAO SENDO PUXADOS ATRAVES DE CODIGOS POR ESTE LINK-->
+  <script src="inicio.js" defer></script>
+</head>
+      
+<body>
+  <div id="header">
+    <div id="logo">
+      <img id="logoImg" src="images/logo1.jpg" alt="Logo Nico Vrum Vrum">
+      <h1 id="tituloLogo">NICO VRUM VRUM</h1>
+    </div>
+    <button id="tema">Modo Escuro</button>
+
+
+
+
+    <!-- Menu -->
+    <div id="menu">
+      <div class="menu-icon" id="menuToggle">☰</div>
+      <ul class="listaMenu">
+        <li class="menu-close-container">
+          <span class="menu-close" id="menuClose">✕</span>
+        </li>
+        <li><a class="btn-menu inicio" href="index.html">Início</a></li>
+        <li><a class="btn-menu principal" href="inicio.html">Principal</a></li>
+        <li><a class="btn-menu sobre" href="sobre.html">Sobre</a></li>
+        <li><a class="btn-menu produtos" href="produtos.html">Produtos</a></li>
+        <li><a class="btn-menu contato active" href="contato.html">Contato</a></li>
+        <li><a class="btn-menu servicos" href="serviços.html">Serviços</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+<!-- PRINCIPAL -->
+
+
+  <main class="main-content">
+    <div class="container">
+      <h1>Entre em Contato Conosco</h1>
+      <p class="subtitulo">Estamos aqui para responder todas suas dúvidas sobre veículos e serviços</p>
+    </div>
+
+
+
+    <!-- Informações de Contato -->
+    <div class="contato-container">
+      <div class="info-contato">
+        <h2>Informações de Contato</h2>
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h3>Endereço</h3>
+            <p>QI 05 CONJUNTO U<br>Brasília - DF, 71020-214</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <h3>Telefone</h3>
+            <p>(61) 98200-3455</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h3>E-mail</h3>
+            <p>contato@nicovrumvrum.com.br</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-clock"></i>
+          <div>
+            <h3>Horario de Funcionamento</h3>
+            <p>Segunda a Sexta: 9h As 18h<br>Sabado: 9h as 13h</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Formulário de Contato -->
+      <form class="formulario-contato">
+        <h2>Formulário de Contato</h2>
+        <p class="subtitulo-form">Preencha o formulário abaixo e entraremos em contato em até 24h</p>
+
+        <div class="form-group">
+          <label for="nome">Nome Completo:</label>
+          <input type="text" id="nome" name="nome" required placeholder="nome">
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required placeholder="@email.com">
+        </div>
+
+        <div class="form-group">
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" required placeholder="(61) 99999-9999">
+        </div>
+
+        <div class="form-group">
+          <label for="assunto">Assunto:</label>
+          <input type="text" id="assunto" name="assunto" required placeholder="sobre o que deseja falar?">
+        </div>
+
+        <div class="form-group">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Escreva sua mensagem aqui..."></textarea>
+        </div>
+
+        <fieldset>
+          <legend>Gênero:</legend>
+          <div class="radio-group">
+            <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+            <label><input type="radio" name="genero" value="feminino"> Feminino</label>
+            <label><input type="radio" name="genero" value="outro"> Outro</label>
+            <label><input type="radio" name="genero" value="prefiro-nao-informar"> Prefiro não informar</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferências de Contato:</legend>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="preferencia" value="email"> Desejo receber notificações por e-mail</label>
+            <label><input type="checkbox" name="preferencia" value="sms"> Desejo receber notificações por SMS</label>
+            <label><input type="checkbox" name="preferencia" value="telefone"> Desejo ser contatado por telefone</label>
+            <label><input type="checkbox" name="preferencia" value="whatsapp"> Prefiro contato por WhatsApp</label>
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+          <label for="servico">Serviço de Interesse:</label>
+          <select id="servico" name="servico" required>
+            <option value="">Selecione uma opção</option>
+            <option value="compra">Compra de veículo</option>
+            <option value="venda">Venda de veículo</option>
+            <option value="financiamento">Financiamento</option>
+            <option value="garantia">Garantia estendida</option>
+            <option value="vistoria">Vistoria veicular</option>
+            <option value="duvida">Dúvida geral</option>
+            <option value="reclamacao">Reclamação</option>
+            <option value="elogio">Elogio</option>
+          </select>
+        </div>
+
+        <div class="form-group termos">
+          <label>
+            <input type="checkbox" name="termos" required>
+            Concordo com os <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade</a>
+          </label>
+        </div>
+
+
+
+        <!-- Botões de Envio e Limpeza -->
+        <div class="botoes">
+          <button type="submit" class="botao-enviar">
+            <i class="fas fa-paper-plane"></i> Enviar
+          </button>
+          <button type="reset" class="botao-limpar">
+            <i class="fas fa-eraser"></i> Limpar
+          </button>
+        </div>
+      </form>
+    </div>
+
+
+
+
+    <!-- Redes Sociais -->
+    <div class="redes-sociais">
+      <h2>Siga-nos nas Redes Sociais</h2>
+      <div class="icones-redes">
+        <a href="https://www.instagram.com/nico_vrum" target="_blank" class="rede-social">
+          <i class="fab fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+        <a href="https://www.facebook.com/NicoLanches" target="_blank" class="rede-social">
+          <i class="fab fa-facebook-f"></i>
+          <span>Facebook</span>
+        </a>
+        <a href="https://www.linkedin.com/in/nico-vrum-vrum-860082367" target="_blank" class="rede-social">
+          <i class="fab fa-linkedin-in"></i>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="voltar-container">
+      <a href="inicio.html" class="botao-voltar">Voltar para Página Principal</a>
+    </div>
+  </main>
+
+  <div id="rodape">
+    <p>© 2024 NICO VRUM VRUM. Todos os direitos reservados.</p>
+    <p>Desenvolvido por: Nicolas Carvalho</p>
+    <p>Contato: (61) 98369-8704</p>
+  </div>
+</body>
+</html>
