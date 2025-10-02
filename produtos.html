@@ -34,7 +34,7 @@
             </ul>
         </div>
     </div>
-    
+
 
 
 <!-- PRINCIPAL -->
@@ -135,7 +135,30 @@
             </div>
         </section>
     </main>
+<section id="mini-crud" class="secao-padrao">
+    <div class="container-crud">
+        <h2>Agendamento de Test Drive / Consulta</h2>
+        
+        <div id="feedback-mensagem" class="mensagem-oculta"></div>
 
+        <form id="form-adicionar-item" class="form-agendamento">
+            
+            <input type="text" id="input-carro" placeholder="Modelo do Carro (Ex: Ferrari Roma)" required>
+            
+            <div class="campos-duplos">
+                <input type="date" id="input-data" required title="Data do agendamento">
+                <input type="time" id="input-hora" required title="Horário estimado">
+            </div>
+
+            <button type="submit" id="btn-adicionar">
+                <i class="fas fa-calendar-alt"></i> Agendar
+            </button>
+        </form>
+
+        <ul id="lista-de-itens" class="lista-itens">
+            </ul>
+    </div>
+</section>
 
 
 
